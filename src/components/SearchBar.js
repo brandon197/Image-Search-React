@@ -6,7 +6,7 @@ class SearchBar extends react.Component {
 onFormSubmit(event){
     event.preventDefault();
 }
-
+//
   //this.onInputchange no brackets for event handler -> callback
   //(e) means event
   //value and onchange make it a controlled element so react itself knows the value of
