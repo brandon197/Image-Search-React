@@ -3,15 +3,16 @@ import react from "react";
 class SearchBar extends react.Component {
   state = { term: "" };
 
-onFormSubmit(event){
+  onFormSubmit = (event) => {
     event.preventDefault();
-}
-//
+
+    console.log(this.state.term);
+  };
+  //
   //this.onInputchange no brackets for event handler -> callback
   //(e) means event
   //value and onchange make it a controlled element so react itself knows the value of
-  //the input not the html/dom world
-
+  //the input
 
   render() {
     return (
