@@ -6,7 +6,10 @@ class SearchBar extends react.Component {
   onFormSubmit = (event) => {
     event.preventDefault();
 
-    console.log(this.state.term);
+    //calls onSearchSubmit(term) from appjs
+    //the props object that was passed to the search bar
+    //will be the value of 'this' inside of sendTerm
+    this.props.sendTerm(this.state.term);
   };
   //
   //this.onInputchange no brackets for event handler -> callback
